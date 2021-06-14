@@ -1,0 +1,43 @@
+{
+  "name": "server-forum-valdek",
+  "version": "1.0.0",
+  "description": "server for forum valdek",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node-dev --respawn src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "del-cli dist && cpy dev-config/* dist && cpy dev-config/.env dist && tsc"
+  },
+  "author": "Paulo Gonçalves",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.25.1",
+    "bcryptjs": "^2.4.3",
+    "class-validator": "^0.13.1",
+    "connect-redis": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "graphql": "^15.5.0",
+    "graphql-middleware": "^6.0.10",
+    "graphql-tools": "^7.0.5",
+    "ioredis": "^4.27.4",
+    "multer": "^1.4.2",
+    "pg": "^8.6.0",
+    "typeorm": "^0.2.34"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/connect-redis": "0.0.16",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@types/express-serve-static-core": "^4.17.21",
+    "@types/express-session": "^1.17.3",
+    "@types/ioredis": "^4.26.4",
+    "@types/multer": "^1.4.5",
+    "@types/pg": "^8.6.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.2"
+  }
+}
